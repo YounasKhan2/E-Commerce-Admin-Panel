@@ -8,6 +8,7 @@ const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: 'dashboard' },
   { name: 'Orders', href: '/orders', icon: 'shopping_cart' },
   { name: 'Products', href: '/products', icon: 'inventory_2' },
+  { name: 'Categories', href: '/categories', icon: 'category' },
   { name: 'Customers', href: '/customers', icon: 'group' },
   { name: 'Analytics', href: '/analytics', icon: 'bar_chart' },
 ];

@@ -1,4 +1,5 @@
 import PageHeader from '@/components/layout/PageHeader';
+import AlertList from '@/components/alerts/AlertList';
 
 export default function DashboardPage() {
   return (
@@ -29,6 +30,19 @@ export default function DashboardPage() {
             <p className="text-white text-2xl font-bold">{metric.value}</p>
           </div>
         ))}
+      </div>
+
+      {/* Low Stock Alerts Section */}
+      <div className="mt-8 bg-sidebar border border-slate-700 rounded-xl p-6">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-white text-xl font-semibold">
+            Low Stock Alerts
+          </h2>
+          <span className="material-symbols-outlined text-slate-400">
+            notifications
+          </span>
+        </div>
+        <AlertList limit={5} />
       </div>
 
       <div className="mt-8 bg-sidebar border border-slate-700 rounded-xl p-6">
