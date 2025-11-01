@@ -11,6 +11,7 @@ const navigation = [
   { name: 'Categories', href: '/categories', icon: 'category' },
   { name: 'Customers', href: '/customers', icon: 'group' },
   { name: 'Segments', href: '/segments', icon: 'workspaces' },
+  { name: 'Support', href: '/support', icon: 'support_agent' },
   { name: 'Analytics', href: '/analytics', icon: 'bar_chart' },
 ];
 
