@@ -10,6 +10,7 @@ const navigation = [
   { name: 'Products', href: '/products', icon: 'inventory_2' },
   { name: 'Categories', href: '/categories', icon: 'category' },
   { name: 'Customers', href: '/customers', icon: 'group' },
+  { name: 'Segments', href: '/segments', icon: 'workspaces' },
   { name: 'Analytics', href: '/analytics', icon: 'bar_chart' },
 ];
 
