@@ -32,6 +32,20 @@
   -moz-osx-font-smoothing: grayscale;
   user-select: none;
   -webkit-user-select: none;
+  /* Hide text content before font loads */
+  color: transparent;
+  transition: color 0s 0.1s;
+}
+
+/* Show icon after a brief delay (font should be loaded) */
+.material-symbols-outlined {
+  animation: showIcon 0s 0.1s forwards;
+}
+
+@keyframes showIcon {
+  to {
+    color: inherit;
+  }
 }
 
 .material-symbols-outlined.fill {
