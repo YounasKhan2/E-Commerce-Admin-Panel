@@ -50,7 +50,7 @@ export default function Table({
 
   return (
     <div className="bg-sidebar border border-slate-700 rounded-xl overflow-hidden">
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto -webkit-overflow-scrolling-touch">
         <table className="w-full">
           <thead className="bg-background-dark border-b border-slate-700">
             <tr>

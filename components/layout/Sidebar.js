@@ -60,11 +60,12 @@ export default function Sidebar() {
       {/* Sidebar */}
       <aside
         className={`
-          flex h-screen flex-col justify-between bg-sidebar p-4 sticky top-0 w-64
+          flex h-screen flex-col justify-between bg-sidebar p-4 w-64
           transition-transform duration-300 ease-in-out z-40
           lg:translate-x-0
           ${isMobileOpen ? 'translate-x-0' : '-translate-x-full'}
-          lg:relative fixed
+          fixed lg:sticky top-0 left-0
+          overflow-y-auto
         `}
       >
         {/* Top Section */}

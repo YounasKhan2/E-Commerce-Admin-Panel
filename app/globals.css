@@ -49,6 +49,52 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Prevent horizontal scroll on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Better mobile scrolling */
+.overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure tables don't break layout on mobile */
+table {
+  min-width: 100%;
+}
+
+/* Mobile-friendly touch targets */
+@media (max-width: 1024px) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Ensure proper spacing on mobile */
+  .space-y-6 > * + * {
+    margin-top: 1rem;
+  }
+  
+  /* Better table cell padding on mobile */
+  table td, table th {
+    white-space: nowrap;
+  }
+}
+
+/* Sidebar should not scroll with page content */
+aside {
+  position: fixed;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+@media (min-width: 1024px) {
+  aside {
+    position: sticky;
+  }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
