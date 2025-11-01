@@ -60,8 +60,30 @@ export default function RootLayout({ children }) {
     <html lang="en" className="dark" data-scroll-behavior="smooth">
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+        />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
           rel="stylesheet"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (document.fonts) {
+                document.fonts.ready.then(function() {
+                  document.querySelectorAll('.material-symbols-outlined').forEach(function(el) {
+                    el.classList.add('font-loaded');
+                  });
+                });
+              }
+            `,
+          }}
         />
       </head>
       <body className={`${inter.variable} font-display antialiased`}>

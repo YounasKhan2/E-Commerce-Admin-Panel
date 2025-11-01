@@ -27,6 +27,21 @@
     'GRAD' 0,
     'opsz' 24;
   font-size: 20px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Prevent text from showing before icon font loads */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Hide text fallback before font loads */
+.material-symbols-outlined:not(.font-loaded) {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .material-symbols-outlined.fill {
