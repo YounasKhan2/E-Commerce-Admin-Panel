@@ -1,10 +1,14 @@
 export default function Alert({
   children,
   variant = 'info',
+  severity, // Alias for variant
   title,
   onClose,
   icon,
 }) {
+  // Support both 'variant' and 'severity' props
+  const alertType = severity || variant;
+  
   const variants = {
     success: {
       bg: 'bg-positive/10',
@@ -32,7 +36,7 @@ export default function Alert({
     },
   };
 
-  const style = variants[variant];
+  const style = variants[alertType];
 
   return (
     <div
