@@ -1,0 +1,8 @@
+# Metrix Commerce Admin Panel
+# This is a private admin dashboard - no indexing allowed
+
+User-agent: *
+Disallow: /
+
+# Sitemap (if needed in future)
+# Sitemap: https://yourdomain.com/sitemap.xml

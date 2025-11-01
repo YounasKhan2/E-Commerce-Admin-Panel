@@ -7,10 +7,11 @@
 ![React](https://img.shields.io/badge/React-18-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8)
 ![Appwrite](https://img.shields.io/badge/Appwrite-Backend-f02e65)
+![Deployment](https://img.shields.io/badge/Deploy-Ready-success)
 
 A comprehensive, production-ready admin dashboard for managing e-commerce operations including products, orders, customers, analytics, and support tickets. Built with Next.js 14 and powered by Appwrite backend.
 
-[Features](#-features) • [Installation](#-installation) • [Documentation](#-documentation) • [Architecture](#-architecture) • [Testing](#-testing)
+**🚀 [Deploy to Vercel](https://vercel.com/new)** | [Features](#-features) • [Installation](#-installation) • [Documentation](#-documentation) • [Deployment](#-deployment)
 
 </div>
 
