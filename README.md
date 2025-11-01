@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Metrix Commerce - E-Commerce Admin Panel
 
-## Getting Started
+A comprehensive admin dashboard for managing products, orders, customers, and analytics. Built with Next.js 14 and integrated with Appwrite backend.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Product Management** - Full CRUD operations with image uploads and inventory tracking
+- **Order Processing** - Complete order workflow with status tracking and fulfillment
+- **Customer Management** - Customer profiles, segmentation, and support tickets
+- **Analytics & Reporting** - Sales reports, product performance, and key metrics
+- **Dark Theme UI** - Professional compact design based on Google Stitch
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js 14 (App Router), React, JavaScript
+- **Styling**: Tailwind CSS with custom theme
+- **Backend**: Appwrite (Database, Storage, Functions)
+- **State Management**: React Context + Custom Hooks
+- **Forms**: React Hook Form
+- **Data Fetching**: SWR
+- **Icons**: Material Symbols Outlined
+- **Font**: Inter
+
+## 📋 Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+- Appwrite account with configured backend
+
+## 🔧 Installation
+
+1. **Clone and navigate to the project**
+   ```bash
+   cd ecommerce-admin
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Configure environment variables**
+   
+   Update `.env.local` with your Appwrite credentials:
+   ```env
+   NEXT_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+   NEXT_PUBLIC_APPWRITE_PROJECT_ID=your_project_id_here
+   ```
+
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser**
+   
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 🎨 Design System
+
+- **Primary Color**: `#1173d4`
+- **Background**: `#101922`
+- **Sidebar**: `#192734`
+- **Success**: `#0bda5b`
+- **Error**: `#fa6238`
+- **Font**: Inter (400, 500, 600, 700, 800, 900)
+- **Icons**: Material Symbols Outlined
+
+## 📁 Project Structure
+
+```
+ecommerce-admin/
+├── app/                    # Next.js App Router
+│   ├── (auth)/            # Authentication routes
+│   ├── (dashboard)/       # Dashboard routes
+│   ├── layout.js          # Root layout
+│   └── globals.css        # Global styles
+├── components/            # React components
+│   ├── ui/               # Reusable UI components
+│   ├── layout/           # Layout components
+│   ├── products/         # Product components
+│   ├── orders/           # Order components
+│   └── customers/        # Customer components
+├── lib/                  # Utilities and helpers
+│   ├── appwrite/        # Appwrite client & operations
+│   ├── hooks/           # Custom React hooks
+│   └── utils/           # Utility functions
+└── contexts/            # React contexts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🗄️ Appwrite Backend
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Database: `ecommerce_main`
+- categories
+- products
+- product_variants
+- customers
+- orders
+- order_items
+- alerts
+- support_tickets
+- ticket_messages
+- customer_segments
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Storage Buckets
+- product-images
+- invoices
+- documents
 
-## Learn More
+### Functions
+- generateInvoice
+- processOrder
+- calculateAnalytics
 
-To learn more about Next.js, take a look at the following resources:
+## 🚦 Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Run development server
+npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Build for production
+npm run build
 
-## Deploy on Vercel
+# Start production server
+npm start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Run linter
+npm run lint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 License
+
+This project is private and proprietary.
+
+## 👥 Team
+
+Built for e-commerce business owners and administrators.
