@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "appwrite": "^21.3.0",
+    "dotenv": "^17.2.3",
     "next": "16.0.1",
+    "node-appwrite": "^20.2.1",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-hook-form": "^7.66.0",
